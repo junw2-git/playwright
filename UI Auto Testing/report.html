@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 22-Jun-2026 at 17:25:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">4 tests took 00:00:09.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">4 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.10.9&#34;, &#34;Platform&#34;: &#34;macOS-26.5.1-arm64-arm-64bit&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.3&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;playwright&#34;: &#34;0.7.2&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;allure-pytest&#34;: &#34;2.16.0&#34;, &#34;xdist&#34;: &#34;3.8.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;bdd&#34;: &#34;7.3.0&#34;, &#34;anyio&#34;: &#34;4.8.0&#34;, &#34;ordering&#34;: &#34;0.6&#34;, &#34;base-url&#34;: &#34;2.1.0&#34;, &#34;rerunfailures&#34;: &#34;16.1&#34;}, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;test_api_response_time.py::test_api_response_time&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_api_response_time.py::test_api_response_time&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_api_response_time.py::test_api_response_time&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\n\n\u63a5\u53e3: https://www.baidu.com/\n\u72b6\u6001: 200\n\u63a5\u53e3: https://www.baidu.com/img/flexible/logo/pc/result.png\n\u72b6\u6001: 200\n\u63a5\u53e3: https://hectorstatic.baidu.com/cd37ed75a9387c5b.js\n\u72b6\u6001: 200\n\u63a5\u53e3: https://www.baidu.com/img/flexible/logo/pc/result@2.png\n\u72b6\u6001: 200\n\u63a5\u53e3: https://www.baidu.com/img/flexible/logo/pc/peak-result.png\n\u72b6\u6001: 200\n\u63a5\u53e3: https://mbd.baidu.com/ztbox?action=zpblog&amp;amp;appname=pcsearch&amp;amp;v=2.0&amp;amp;data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1782120321395%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22display%22%2C%22value%22%3A%22%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22have_hotsearch%22%3A%221%22%2C%22is_kuang_rec_disp%22%3A%221%22%2C%22search_kuang_status%22%3A%22default%22%2C%22aisou_btn%22%3A%220%22%2C%22kuang_rec_status%22%3A%221%22%2C%22is_first_visit%22%3A%221%22%7D%7D%7D%7D\n\u72b6\u6001: 200\n\u63a5\u53e3: https://pss.bdstatic.com/r/www/cache/static/protocol/https/amd_modules/@baidu/guarantee-popper_784e0ad.js\n\u72b6\u6001: 200\n\u63a5\u53e3: https://mbd.baidu.com/ztbox?action=zpblog&amp;amp;appname=pcsearch&amp;amp;v=2.0&amp;amp;data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1782120321478%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22show%22%2C%22value%22%3A%22home_operate%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22function_type%22%3A%22ai_search%22%2C%22area%22%3A%22base%22%2C%22pos%22%3A1%2C%22content%22%3A%22%E5%A4%8D%E6%9D%82%E9%97%AE%E9%A2%98%E5%B0%B1%E6%89%BE%E6%96%87%E5%BF%83%E5%8A%A9%E6%89%8B%EF%BC%8C%E6%B7%B1%E5%85%A5%E6%80%9D%E8%80%83%E5%9B%9E%E7%AD%94%E6%9B%B4%E4%BC%98%22%2C%22function_list%22%3A%5B%22%E5%A4%8D%E6%9D%82%E9%97%AE%E9%A2%98%E5%B0%B1%E6%89%BE%E6%96%87%E5%BF%83%E5%8A%A9%E6%89%8B%EF%BC%8C%E6%B7%B1%E5%85%A5%E6%80%9D%E8%80%83%E5%9B%9E%E7%AD%94%E6%9B%B4%E4%BC%98%22%5D%7D%7D%7D%7D\n\u72b6\u6001: 200\n\u63a5\u53e3: https://www.baidu.com/sugrec?&amp;amp;prod=pc_his&amp;amp;from=pc_web&amp;amp;json=1&amp;amp;imod=2&amp;amp;sid=&amp;amp;hisdata=%5B%5D&amp;amp;_t=1782120321490&amp;amp;req=2&amp;amp;usegosug=1&amp;amp;csor=0\n\u72b6\u6001: 200\n\u63a5\u53e3: https://mbd.baidu.com/ztbox?action=zpblog&amp;amp;appname=pcsearch&amp;amp;v=2.0&amp;amp;data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1782120321508%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22show%22%2C%22value%22%3A%22kuang_rec%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22query%22%3A%22%E4%BF%84%E5%86%9B%E5%8F%91%E5%B0%84%E9%98%B2%E7%A9%BA%E5%AF%BC%E5%BC%B9%E6%8B%A6%E6%88%AA%E6%97%A0%E4%BA%BA%E6%9C%BA%22%2C%22str_sa%22%3A%22iph_igh_notyyc_gsnd%22%7D%7D%7D%7D\n\u72b6\u6001: 200\n\u63a5\u53e3: https://gips2.baidu.com/it/u=1627277417,3307578141&amp;amp;fm=3028&amp;amp;app=3028&amp;amp;f=PNG&amp;amp;fmt=auto&amp;amp;q=100&amp;amp;size=f526_253\n\u72b6\u6001: 200\n\u63a5\u53e3: https://sp2.baidu.com/-L-Ysjip0QIZ8tyhnq/v.gif?mod=superman%3Acomponents&amp;amp;submod=hotsearch&amp;amp;utype=undefined&amp;amp;superver=supernewplus&amp;amp;portrait=undefined&amp;amp;logPortrait=undefined&amp;amp;glogid=2167160586&amp;amp;type=2011&amp;amp;pid=315&amp;amp;isLogin=0&amp;amp;version=PCHome&amp;amp;terminal=PC&amp;amp;qid=0xd98b0360012c3f0a&amp;amp;sid=&amp;amp;super_frm=&amp;amp;from_login=&amp;amp;from_reg=&amp;amp;query=&amp;amp;curcard=2&amp;amp;curcardtab=&amp;amp;_r=0.873187313039158&amp;amp;m=superman%3Acomponents_hotsearchShow&amp;amp;showType=hotword&amp;amp;words=%5B%22%E4%BB%8E%E2%80%9C%E5%85%AD%E9%A1%B9%E8%A7%84%E5%AE%9A%E2%80%9D%E5%88%B0%E2%80%9C%E5%85%AB%E9%A1%B9%E8%A7%84%E5%AE%9A%E2%80%9D%22%2C%22%E4%B8%96%E7%95%8C%E6%9D%AFG%E7%BB%84%E5%BD%BB%E5%BA%95%E5%A4%A7%E4%B9%B1%E6%96%97%E4%BA%86%22%2C%22%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E6%96%AF%E5%A1%94%E9%BB%98%E5%AE%A3%E5%B8%83%E8%BE%9E%E8%81%8C%22%2C%22%E8%BE%BD%E5%AE%81%E8%88%B0%E7%BC%96%E9%98%9F%E5%BA%94%E5%AF%B9%E6%97%A5%E6%9C%AC%E8%88%B0%E6%9C%BA%E6%BB%8B%E6%89%B0%E6%8C%91%E8%A1%85%22%2C%22%E8%B5%9B%E5%90%8E%E8%A2%AB%E8%A6%81%E6%B1%82%E7%A6%BB%E7%BE%8E%20%E4%BC%8A%E6%9C%97%E9%98%9F%E7%95%99%E4%B8%8B%E4%B8%80%E5%BC%A0%E7%BA%B8%E6%9D%A1%22%2C%22%E5%A4%AB%E5%A6%BB%E4%BB%A3%E7%AE%A1%E5%A4%A7%E6%A3%9A%E8%AF%AF%E5%85%BB%E5%87%BA%E6%BB%A1%E5%9C%B0%E9%A9%AC%E9%BD%BF%E8%8B%8B%22%2C%22%E5%A1%AB%E6%8A%A5%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF%E5%89%8D%E5%85%88%E7%9C%8B%E8%BF%99%E4%BB%BD%E6%8C%87%E5%8D%97%22%2C%22%E9%9B%B7%E5%86%9B%E5%86%8D%E8%B0%88%E4%B8%8E%E8%91%A3%E6%98%8E%E7%8F%A0%E8%B5%8C%E7%BA%A6%E7%9B%B4%E8%A8%80%E5%90%8E%E6%82%94%22%2C%224%E9%83%A8%E9%97%A8%E8%81%94%E5%90%88%E6%A0%B8%E6%9F%A5%E2%80%9C%E7%BA%B8%E5%B0%BF%E8%A3%A4%E7%94%B2%E9%85%B0%E8%83%BA%E9%97%AE%E9%A2%98%E2%80%9D%22%2C%22%E9%99%88%E5%B0%8F%E6%98%A5%E6%BC%94%E5%94%B1%E4%BC%9A%E4%B8%8A%E8%BE%B9%E5%93%AD%E8%BE%B9%E9%81%93%E6%AD%89%22%5D&amp;amp;pagenum=0\n\u72b6\u6001: 200\n\u63a5\u53e3: https://sp1.baidu.com/-L-Xsjip0QIZ8tyhnq/v.gif?logactid=1234567890&amp;amp;showTab=10000&amp;amp;opType=showpv&amp;amp;mod=superman%3Alib&amp;amp;submod=index&amp;amp;superver=supernewplus&amp;amp;glogid=2167160586&amp;amp;type=2011&amp;amp;pid=315&amp;amp;isLogin=0&amp;amp;version=PCHome&amp;amp;terminal=PC&amp;amp;qid=0xd98b0360012c3f0a&amp;amp;sid=&amp;amp;super_frm=&amp;amp;from_login=&amp;amp;from_reg=&amp;amp;query=&amp;amp;curcard=2&amp;amp;curcardtab=&amp;amp;_r=0.7766048112740723\n\u72b6\u6001: 200\n\u63a5\u53e3: https://sp1.baidu.com/-L-Xsjip0QIZ8tyhnq/v.gif?logactid=1234567890&amp;amp;showTab=10000&amp;amp;opType=nodepv&amp;amp;mod=superman%3Alib&amp;amp;submod=index&amp;amp;superver=supernewplus&amp;amp;glogid=2167160586&amp;amp;type=2011&amp;amp;pid=315&amp;amp;isLogin=0&amp;amp;version=PCHome&amp;amp;terminal=PC&amp;amp;qid=0xd98b0360012c3f0a&amp;amp;sid=&amp;amp;super_frm=&amp;amp;from_login=&amp;amp;from_reg=&amp;amp;query=&amp;amp;curcard=2&amp;amp;curcardtab=&amp;amp;_r=0.7470069805551847\n\u72b6\u6001: 200\n\u63a5\u53e3: https://hector.baidu.com/a.js\n\u72b6\u6001: 200\n&#34;}], &#34;test_inventory_page_performance.py::test_inventory_page_performance&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_inventory_page_performance.py::test_inventory_page_performance&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_inventory_page_performance.py::test_inventory_page_performance&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\u5546\u54c1\u5217\u8868\u52a0\u8f7d\u65f6\u95f4:0.04 s\n&#34;}], &#34;test_monitor_network_request.py::test_network_monitor&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_monitor_network_request.py::test_network_monitor&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_monitor_network_request.py::test_network_monitor&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\n\n\u8bf7\u6c42-url: https://www.baidu.com/\n\u8bf7\u6c42-type: document\n\u8bf7\u6c42-url: https://www.baidu.com/img/flexible/logo/pc/result.png\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://www.baidu.com/img/flexible/logo/pc/result@2.png\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://www.baidu.com/img/flexible/logo/pc/peak-result.png\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://hectorstatic.baidu.com/cd37ed75a9387c5b.js\n\u8bf7\u6c42-type: script\n\u8bf7\u6c42-url: https://mbd.baidu.com/ztbox?action=zpblog&amp;amp;appname=pcsearch&amp;amp;v=2.0&amp;amp;data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1782120325605%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22display%22%2C%22value%22%3A%22%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22have_hotsearch%22%3A%221%22%2C%22is_kuang_rec_disp%22%3A%221%22%2C%22search_kuang_status%22%3A%22default%22%2C%22aisou_btn%22%3A%220%22%2C%22kuang_rec_status%22%3A%221%22%2C%22is_first_visit%22%3A%221%22%7D%7D%7D%7D\n\u8bf7\u6c42-type: ping\n\u8bf7\u6c42-url: https://sp1.baidu.com/-L-Xsjip0QIZ8tyhnq/v.gif?logactid=1234567890&amp;amp;showTab=10000&amp;amp;opType=showpv&amp;amp;mod=superman%3Alib&amp;amp;submod=index&amp;amp;superver=supernewplus&amp;amp;glogid=2149199846&amp;amp;type=2011&amp;amp;pid=315&amp;amp;isLogin=0&amp;amp;version=PCHome&amp;amp;terminal=PC&amp;amp;qid=0x9ddeffc9001a2fe6&amp;amp;sid=&amp;amp;super_frm=&amp;amp;from_login=&amp;amp;from_reg=&amp;amp;query=&amp;amp;curcard=2&amp;amp;curcardtab=&amp;amp;_r=0.8902499017943858\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://sp1.baidu.com/-L-Xsjip0QIZ8tyhnq/v.gif?logactid=1234567890&amp;amp;showTab=10000&amp;amp;opType=nodepv&amp;amp;mod=superman%3Alib&amp;amp;submod=index&amp;amp;superver=supernewplus&amp;amp;glogid=2149199846&amp;amp;type=2011&amp;amp;pid=315&amp;amp;isLogin=0&amp;amp;version=PCHome&amp;amp;terminal=PC&amp;amp;qid=0x9ddeffc9001a2fe6&amp;amp;sid=&amp;amp;super_frm=&amp;amp;from_login=&amp;amp;from_reg=&amp;amp;query=&amp;amp;curcard=2&amp;amp;curcardtab=&amp;amp;_r=0.7045561582840296\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://sp2.baidu.com/-L-Ysjip0QIZ8tyhnq/v.gif?mod=superman%3Acomponents&amp;amp;submod=hotsearch&amp;amp;utype=undefined&amp;amp;superver=supernewplus&amp;amp;portrait=undefined&amp;amp;logPortrait=undefined&amp;amp;glogid=2149199846&amp;amp;type=2011&amp;amp;pid=315&amp;amp;isLogin=0&amp;amp;version=PCHome&amp;amp;terminal=PC&amp;amp;qid=0x9ddeffc9001a2fe6&amp;amp;sid=&amp;amp;super_frm=&amp;amp;from_login=&amp;amp;from_reg=&amp;amp;query=&amp;amp;curcard=2&amp;amp;curcardtab=&amp;amp;_r=0.6826153535393439&amp;amp;m=superman%3Acomponents_hotsearchShow&amp;amp;showType=hotword&amp;amp;words=%5B%22%E4%BB%8E%E2%80%9C%E5%85%AD%E9%A1%B9%E8%A7%84%E5%AE%9A%E2%80%9D%E5%88%B0%E2%80%9C%E5%85%AB%E9%A1%B9%E8%A7%84%E5%AE%9A%E2%80%9D%22%2C%22%E4%B8%96%E7%95%8C%E6%9D%AFG%E7%BB%84%E5%BD%BB%E5%BA%95%E5%A4%A7%E4%B9%B1%E6%96%97%E4%BA%86%22%2C%22%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E6%96%AF%E5%A1%94%E9%BB%98%E5%AE%A3%E5%B8%83%E8%BE%9E%E8%81%8C%22%2C%22%E8%BE%BD%E5%AE%81%E8%88%B0%E7%BC%96%E9%98%9F%E5%BA%94%E5%AF%B9%E6%97%A5%E6%9C%AC%E8%88%B0%E6%9C%BA%E6%BB%8B%E6%89%B0%E6%8C%91%E8%A1%85%22%2C%22%E8%B5%9B%E5%90%8E%E8%A2%AB%E8%A6%81%E6%B1%82%E7%A6%BB%E7%BE%8E%20%E4%BC%8A%E6%9C%97%E9%98%9F%E7%95%99%E4%B8%8B%E4%B8%80%E5%BC%A0%E7%BA%B8%E6%9D%A1%22%2C%22%E5%A4%AB%E5%A6%BB%E4%BB%A3%E7%AE%A1%E5%A4%A7%E6%A3%9A%E8%AF%AF%E5%85%BB%E5%87%BA%E6%BB%A1%E5%9C%B0%E9%A9%AC%E9%BD%BF%E8%8B%8B%22%2C%22%E5%A1%AB%E6%8A%A5%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF%E5%89%8D%E5%85%88%E7%9C%8B%E8%BF%99%E4%BB%BD%E6%8C%87%E5%8D%97%22%2C%22%E9%9B%B7%E5%86%9B%E5%86%8D%E8%B0%88%E4%B8%8E%E8%91%A3%E6%98%8E%E7%8F%A0%E8%B5%8C%E7%BA%A6%E7%9B%B4%E8%A8%80%E5%90%8E%E6%82%94%22%2C%224%E9%83%A8%E9%97%A8%E8%81%94%E5%90%88%E6%A0%B8%E6%9F%A5%E2%80%9C%E7%BA%B8%E5%B0%BF%E8%A3%A4%E7%94%B2%E9%85%B0%E8%83%BA%E9%97%AE%E9%A2%98%E2%80%9D%22%2C%22%E9%99%88%E5%B0%8F%E6%98%A5%E6%BC%94%E5%94%B1%E4%BC%9A%E4%B8%8A%E8%BE%B9%E5%93%AD%E8%BE%B9%E9%81%93%E6%AD%89%22%5D&amp;amp;pagenum=0\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://hector.baidu.com/a.js\n\u8bf7\u6c42-type: script\n\u8bf7\u6c42-url: https://pss.bdstatic.com/r/www/cache/static/protocol/https/amd_modules/@baidu/guarantee-popper_784e0ad.js\n\u8bf7\u6c42-type: script\n\u8bf7\u6c42-url: https://mbd.baidu.com/ztbox?action=zpblog&amp;amp;appname=pcsearch&amp;amp;v=2.0&amp;amp;data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1782120325665%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22show%22%2C%22value%22%3A%22home_operate%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22function_type%22%3A%22ai_search%22%2C%22area%22%3A%22base%22%2C%22pos%22%3A1%2C%22content%22%3A%22%E5%A4%8D%E6%9D%82%E9%97%AE%E9%A2%98%E5%B0%B1%E6%89%BE%E6%96%87%E5%BF%83%E5%8A%A9%E6%89%8B%EF%BC%8C%E6%B7%B1%E5%85%A5%E6%80%9D%E8%80%83%E5%9B%9E%E7%AD%94%E6%9B%B4%E4%BC%98%22%2C%22function_list%22%3A%5B%22%E5%A4%8D%E6%9D%82%E9%97%AE%E9%A2%98%E5%B0%B1%E6%89%BE%E6%96%87%E5%BF%83%E5%8A%A9%E6%89%8B%EF%BC%8C%E6%B7%B1%E5%85%A5%E6%80%9D%E8%80%83%E5%9B%9E%E7%AD%94%E6%9B%B4%E4%BC%98%22%5D%7D%7D%7D%7D\n\u8bf7\u6c42-type: ping\n\u8bf7\u6c42-url: https://gips2.baidu.com/it/u=1627277417,3307578141&amp;amp;fm=3028&amp;amp;app=3028&amp;amp;f=PNG&amp;amp;fmt=auto&amp;amp;q=100&amp;amp;size=f526_253\n\u8bf7\u6c42-type: image\n\u8bf7\u6c42-url: https://www.baidu.com/sugrec?&amp;amp;prod=pc_his&amp;amp;from=pc_web&amp;amp;json=1&amp;amp;imod=2&amp;amp;sid=&amp;amp;hisdata=%5B%5D&amp;amp;_t=1782120325673&amp;amp;req=2&amp;amp;usegosug=1&amp;amp;csor=0\n\u8bf7\u6c42-type: xhr\n\u8bf7\u6c42-url: https://mbd.baidu.com/ztbox?action=zpblog&amp;amp;appname=pcsearch&amp;amp;v=2.0&amp;amp;data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1782120325681%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22show%22%2C%22value%22%3A%22kuang_rec%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22query%22%3A%22%E4%BF%84%E5%86%9B%E5%8F%91%E5%B0%84%E9%98%B2%E7%A9%BA%E5%AF%BC%E5%BC%B9%E6%8B%A6%E6%88%AA%E6%97%A0%E4%BA%BA%E6%9C%BA%22%2C%22str_sa%22%3A%22iph_igh_notyyc_gsnd%22%7D%7D%7D%7D\n\u8bf7\u6c42-type: ping\n\u8bf7\u6c42-url: https://hectorstatic.baidu.com/96c9c06653ba892e.js\n\u8bf7\u6c42-type: script\n&#34;}], &#34;test_page_load_time.py::test_page_load_time&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_page_load_time.py::test_page_load_time&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_page_load_time.py::test_page_load_time&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n\n\nstart time: 1782120326.15292\nend time: 1782120328.1075652\n\u9875\u9762\u52a0\u8f7d\u65f6\u95f4: 1.95 \u79d2\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
