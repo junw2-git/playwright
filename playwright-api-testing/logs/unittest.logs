@@ -1,0 +1,84 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.3.3, pluggy-1.5.0 -- /Library/Developer/CommandLineTools/usr/bin/python3
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.6', 'Platform': 'macOS-26.5.1-arm64-arm-64bit', 'Packages': {'pytest': '8.3.3', 'pluggy': '1.5.0'}, 'Plugins': {'anyio': '4.12.1', 'html': '4.1.1', 'metadata': '3.1.1', 'bdd': '7.3.0', 'ordering': '0.6', 'rerunfailures': '16.0.1', 'base-url': '2.1.0', 'playwright': '0.7.1'}, 'Base URL': ''}
+rootdir: /Users/junw2/Desktop/Marion_Wu_Cisco_Backup/Playwright/playwright-api-testing
+plugins: anyio-4.12.1, html-4.1.1, metadata-3.1.1, bdd-7.3.0, ordering-0.6, rerunfailures-16.0.1, base-url-2.1.0, playwright-0.7.1
+collecting ... collected 1 item
+
+tests/test_api_ui_integration.py::test_ui_api_integration PASSED         [100%]
+
+============================== 1 passed in 6.74s ===============================
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.3.3, pluggy-1.5.0 -- /Library/Developer/CommandLineTools/usr/bin/python3
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.6', 'Platform': 'macOS-26.5.1-arm64-arm-64bit', 'Packages': {'pytest': '8.3.3', 'pluggy': '1.5.0'}, 'Plugins': {'anyio': '4.12.1', 'html': '4.1.1', 'metadata': '3.1.1', 'bdd': '7.3.0', 'ordering': '0.6', 'rerunfailures': '16.0.1', 'base-url': '2.1.0', 'playwright': '0.7.1'}, 'Base URL': ''}
+rootdir: /Users/junw2/Desktop/Marion_Wu_Cisco_Backup/Playwright/playwright-api-testing
+plugins: anyio-4.12.1, html-4.1.1, metadata-3.1.1, bdd-7.3.0, ordering-0.6, rerunfailures-16.0.1, base-url-2.1.0, playwright-0.7.1
+collecting ... collected 2 items
+
+tests/test_data_driven.py::test_load_json PASSED                         [ 50%]
+tests/test_data_driven.py::test_load_csv PASSED                          [100%]
+
+============================== 2 passed in 0.01s ===============================
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.3.3, pluggy-1.5.0 -- /Library/Developer/CommandLineTools/usr/bin/python3
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.6', 'Platform': 'macOS-26.5.1-arm64-arm-64bit', 'Packages': {'pytest': '8.3.3', 'pluggy': '1.5.0'}, 'Plugins': {'anyio': '4.12.1', 'html': '4.1.1', 'metadata': '3.1.1', 'bdd': '7.3.0', 'ordering': '0.6', 'rerunfailures': '16.0.1', 'base-url': '2.1.0', 'playwright': '0.7.1'}, 'Base URL': ''}
+rootdir: /Users/junw2/Desktop/Marion_Wu_Cisco_Backup/Playwright/playwright-api-testing
+plugins: anyio-4.12.1, html-4.1.1, metadata-3.1.1, bdd-7.3.0, ordering-0.6, rerunfailures-16.0.1, base-url-2.1.0, playwright-0.7.1
+collecting ... collected 2 items
+
+tests/test_httpbin.py::test_get_request PASSED                           [ 50%]
+tests/test_httpbin.py::test_post_request PASSED                          [100%]
+
+============================== 2 passed in 0.32s ===============================
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.3.3, pluggy-1.5.0 -- /Library/Developer/CommandLineTools/usr/bin/python3
+cachedir: .pytest_cache
+metadata: {'Python': '3.9.6', 'Platform': 'macOS-26.5.1-arm64-arm-64bit', 'Packages': {'pytest': '8.3.3', 'pluggy': '1.5.0'}, 'Plugins': {'anyio': '4.12.1', 'html': '4.1.1', 'metadata': '3.1.1', 'bdd': '7.3.0', 'ordering': '0.6', 'rerunfailures': '16.0.1', 'base-url': '2.1.0', 'playwright': '0.7.1'}, 'Base URL': ''}
+rootdir: /Users/junw2/Desktop/Marion_Wu_Cisco_Backup/Playwright/playwright-api-testing
+plugins: anyio-4.12.1, html-4.1.1, metadata-3.1.1, bdd-7.3.0, ordering-0.6, rerunfailures-16.0.1, base-url-2.1.0, playwright-0.7.1
+collecting ... collected 1 item
+
+tests/test_saucedemo_api.py::test_saucedemo_network FAILED               [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_saucedemo_network ____________________________
+
+page = <Page url='https://www.saucedemo.com/inventory.html'>
+
+    def test_saucedemo_network(page):
+        page.goto("https://www.saucedemo.com/")
+        pattern = re.compile(r".*saucedemo\.com.*")
+    
+        with page.expect_response(pattern) as req:
+            page.fill("#user-name", "standard_user")
+            page.fill("#password", "secret_sauce")
+>           page.click("#login-button")
+
+tests/test_saucedemo_api.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../../Library/Python/3.9/lib/python/site-packages/playwright/_impl/_sync_base.py:85: in __exit__
+    self._event.value
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <playwright._impl._sync_base.EventInfo object at 0x1099167f0>
+
+    @property
+    def value(self) -> T:
+        while not self._future.done():
+            self._sync_base._dispatcher_fiber.switch()
+        asyncio._set_running_loop(self._sync_base._loop)
+        exception = self._future.exception()
+        if exception:
+>           raise exception
+E           playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded while waiting for event "response"
+E           =========================== logs ===========================
+E           waiting for response .*saucedemo\.com.*
+E           ============================================================
+
+../../../../Library/Python/3.9/lib/python/site-packages/playwright/_impl/_sync_base.py:59: TimeoutError
+=========================== short test summary info ============================
+FAILED tests/test_saucedemo_api.py::test_saucedemo_network - playwright._impl...
+============================== 1 failed in 40.25s ==============================
