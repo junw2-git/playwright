@@ -13,7 +13,6 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh "cd ${WORKSPACE}/'UI Auto Testing' "
                 sh 'pip3 install pytest pytest-playwright pytest-html playwright allure-pytest --user'
                 sh 'playwright install'
             }
@@ -21,7 +20,8 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'pytest'
+                sh "cd ${WORKSPACE}/'UI Auto Testing' "
+                sh 'pytest --html=report.html'
             }
         }
 
