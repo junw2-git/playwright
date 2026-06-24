@@ -14,7 +14,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh "cd ${WORKSPACE}/'UI Auto Testing' "
-                sh 'pip3 install -r requirements.txt --user'
+                sh 'pip3 install pytest pytest-playwright pytest-html playwright allure-pytest --user'
                 sh 'playwright install'
             }
         }
