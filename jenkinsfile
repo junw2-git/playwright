@@ -6,15 +6,15 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                  sh "echo 'ingore git steps' "
+                  sh "echo 'ignore git steps' "
                   //git 'https://github.com/junw2-git/playwright.git'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                sh "cd /var/lib/jenkins/workspace/Playwright/'UI Auto Testing' "
-                sh 'pip install -r requirements.txt'
+                sh "cd ${WORKSPACE}/'UI Auto Testing' "
+                sh 'pip3 install -r requirements.txt --user'
                 sh 'playwright install'
             }
         }
