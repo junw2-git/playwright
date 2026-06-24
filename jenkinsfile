@@ -21,7 +21,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh '''
-                  cd "${WORKSPACE}/UI Auto Testing "
+                  cd "${WORKSPACE}/UI Auto Testing"
                   ls -al
                   pytest test_monitor_network_request.py test_inventory_page_performance.py test_api_response_time.py test_page_load_time.py \
                     --html=report.html
