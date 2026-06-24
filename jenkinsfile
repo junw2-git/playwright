@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                   sh "echo 'ingore git steps' "
-                  #git 'https://github.com/junw2-git/playwright.git'
+                  //git 'https://github.com/junw2-git/playwright.git'
             }
         }
 
